@@ -21,8 +21,3 @@ It focuses on **front-end development and UI/UX design** with sections like over
 
 ---
 
-## 📂 Project Structure
-- index.html # Main landing page
-- images/ # Posters and UI images
-- cdn/ # Bootstrap, jQuery, and scripts
-- cdn1/ # Custom CSS and Navbar files
