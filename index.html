@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>p51</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <meta name="keywords" content="Project" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="refresh" content="30" >-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cdn/bootstrap.min.css">
+    <script src="cdn/jquery.min.js"></script>
+    <script src="cdn/popper.min.js"></script>
+    <script src="cdn/bootstrap.min.js"></script>
+
+    <!-- Menu style -->
+    <link href="cdn1/bootstrap-4-hover-navbar.css" rel="stylesheet">
+    <script src="cdn1/bootstrap-4-hover-navbar.js"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" href="cdn1/css/adminlte.min.css">
+    <link rel="stylesheet" href="cdn1/css/AdminLTE1.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="cdn1/fonts/font-awesome.min.css">
+
+    <style> 
+	    .banner
+		{  
+		    color: white;
+			font-family: Constantia;
+			text-align: center;
+			font-size: 50px;
+
+}
+ .header
+{
+        background-color: black;
+        background-bottom: 1px solid;
+		color: white;
+		
+}	
+.container
+{
+position: relative;
+text-align: center;
+color: white;
+
+}
+.centered
+{
+position: absolute;
+top: 400%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.line
+{
+width: 100%;
+height: 4rem;
+overflow: hidden;
+
+padding: 0;
+margin-bottom: 16px;
+}
+.lineup
+{
+animation: 3s anim-lineup ease-out;
+}
+@keyframes anim-lineup
+{
+0%{
+opacity: 0;
+transform: translateY(80%);
+}
+20%{
+opacity: 0;
+
+}
+50%{
+opacity: 1;
+transform: translateY(0%);
+}
+100%{
+opacity: 1;
+transform: translateY(0%);
+}
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 20%;
+  display: none; 
+}
+
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: black;
+  padding: 10px;
+}
+
+
+.show {
+  display: block;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 16px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.title-word{
+animation: color-animation 4s linear infinite;
+}
+.title-word1{
+--color-1: #df8453;
+--color-2: #3d8dae;
+--color-3: #e4a9a8;
+}
+@keyframes color-animation{
+0% {color: var(--color-1)}
+32% {color: var(--color-1)}
+33% {color: var(--color-2)}
+65% {color: var(--color-2)}
+66% {color: var(--color-3)}
+99% {color: var(--color-3)}
+100% {color: var(--color-1)}
+}
+.contain{
+place-items: center;
+text-align: center;
+
+
+}
+.title{
+font-family: "Montserrat", sans-serif;
+font-weight: 1000;
+font-size: 40px;
+}
+        .navbar-nav .nav-item .nav-link{
+		    color: white;
+		}
+        .navbar-nav > li
+        {
+            margin-left: 30px;
+            margin-right: 30px;            
+        } 
+      		
+        .dropdown-submenu
+        {
+            position: relative;
+        }        
+        .dropdown-submenu a::after
+        {
+      
+            position: absolute;    
+            top: 50%;
+        }        
+        .dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu
+        {
+            display: flex;
+            flex-direction: column;
+            position: absolute !important;
+            margin-top: -30px;
+            left: 100%;
+        }            
+        .a1:link, .a1:visited 
+		{
+          display: inline-block;  
+        }
+		.boxes
+		{
+		 padding: 77px 90px;
+  background-color: #EFF2FF;
+        }
+        
+		.mtext
+		{
+		    font-family: sans-serif;
+		}
+		.para{
+		padding: 50px 60px;
+		}
+		.columne {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columne {
+    width: 100%;
+    display: block;
+  }
+}
+
+.carde {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containere {
+  padding:  26px;
+  
+ 
+}
+
+.containere::after, .rowe::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+
+<body style="background-color: white;">
+
+
+
+
+<header class="header">
+
+<div class="container">
+	
+	
+    	<nav class="navbar navbar-expand-sm  btco-hover-menu navbar-dark navbar-full";>
+        <i></i>
+		<button class="navbar-toggler bg-success" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon "></span>
+        </button>
+		
+		<div class="row collapse navbar-collapse dropdown" id="navbarNavDropdown" style="font-family:arial;">
+            <ul class="navbar-nav">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <li class="nav-item dropdown"><a class="nav-link" href="Aboutus.html">About</a></li>
+
+                <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu">
+						<li><a class="dropdown-item text-black" href="#">Menu 1</a></li>
+                        <li><a class="dropdown-item text-black" href="#">menu 2</a></li>
+                            <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item text-black" href="#">Menu 3</a></li>
+                        <li><a class="dropdown-item text-black" href="#">Menu 4</a></li>
+                    </ul>
+                    <ul class="dropdown-menu">
+						<li><a class="dropdown-item text-black" href="images/A.docx">Word Document</a></li>
+                        <li><a class="dropdown-item text-black" href="images/B.pdf">PDF Document</a></li>
+                    </ul>
+                
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="nav-link dropdown-item text-black" href="#">Menu</a></li>							
+                            <li class="dropdown-submenu ">
+                                <a class="nav-link dropdown-item dropdown-toggle text-black" data-toggle="dropdown" href="#">Submenu</a>
+								<ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-black" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item text-black" href="#">Link 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+
+                <li class="nav-item dropdown"><a class="nav-link" href="Contact.html">Contact</a></li>
+				
+                <li class="nav-item dropdown">
+                    <span class="badge  bg-orange">
+						<a class="nav-link" href="Register.html">Register</a>
+                    </span>
+						
+                    
+                </li>
+                                     
+                <li class="nav-item dropdown">
+				 <span class="badge  bg-orange">
+				<a class="nav-link" href="Login.html">Login</a>
+				</span>
+                </li>    
+            </ul>
+        </div>
+		</nav>
+		<div class="banner centered">
+	    <span><strong> PREDICTING MOVIE SUCCESS!</strong></span>
+		
+		<p  class="lineup" style="color: white; font-size:20px; font-family:helvetica"> <b>If you love cinema, and you are constantly looking for the best ways to keep up to date with what's new and what's upcoming, then this site is going to be perfect for you to predict the success of the movie before the release of movie.</b></p>
+		
+		</div>
+	</header>
+	<img src=".\images\img17.jpg" style="width:100%;">
+	
+	</div>
+	
+	<div class="contain para">
+	<h1 class="title">
+	<span class="title-word title-word1">OVERVIEW</span>
+	</h1>
+	<br>
+                <center><p style="font-family:Sitka Text;font-size:19px;">In today's world, the film industry and technology are developing significantly.  Whether one watches the movie on mobile or in the theatre, it is really important to know what kind of movies people like which will eventually help the  producers and directors to make great movies.  Also, it will help a lot of cinema hall owners as they need to manage screening for the movie.  So we are fetching comments and tweets from YouTube and Twitter API respectively after the release of the trailer of the movie and performing Sentiment analysis on them.  Thus, we propose a system to predict box-office movie success using machine learning concepts by analyzing the sent.  We use some algorithms like decision tree regression, SVR  and  random forest regression to predict due to weight age and then based on multiple thresholds calculated on the basis of descriptive statistics of dataset of each component it is given class flop, hit, super hit label. 
+
+						</p></center>
+						</div>
+						
+<div class="main">
+<center> <h1 style="font-family:helvetica"><u> Explore Movie World..!</u><h1>
+<br>
+<h2 style="color:black">Top Rated Movies In Each Genre</h2></center> 
+<br>
+<div id="myBtnContainer">
+
+  <button class="btn active" onclick="filterSelection('action')"> Action</button>
+  <button class="btn" onclick="filterSelection('sci-fi')"> Sci-fi</button>
+  <button class="btn" onclick="filterSelection('sport')"> Sport</button>
+  <button class="btn" onclick="filterSelection('animation')"> Animation</button>
+  <button class="btn" onclick="filterSelection('adventure')">Adventure</button>
+  <button class="btn" onclick="filterSelection('horror')">Horror</button>  
+
+</div>
+
+
+<div class="row">
+ <div class="column action">
+    <div class="content">
+      <img src=".\images\img37.png" alt="avengers infinity war" style="width:100%">
+      <h4 class="mtext" style="color:white">Avengers</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column action">
+    <div class="content">
+      <img src=".\images\img40.jpg" alt="Thuppaki" style="width:100%">
+	  <br>
+      <h4 class="mtext" style="color:white">Thuppaki</h4>
+	 
+      <p style="color:white">Language: Tamil</p>
+    </div>
+  </div>
+  <div class="column action">
+    <div class="content">
+      <img src=".\images\img35.jpg" alt="Transformers" style="width:100%">
+      <h4 class="mtext" style="color:white">Transformers</h4>
+     <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column action">
+    <div class="content">
+    <img src=".\images\img25.jpg" alt="MissionImpossible" style="width:100%">
+      <h4 class="mtext" style="color:white;">MI fallout</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column action">
+    <div class="content">
+    <img src=".\images\img42.jpg" alt="rush hour" style="width:100%">
+      <h4 class="mtext" style="color:white">Rush Hour</h4>
+      <p style="color:white">Language: Chinese</p>
+    </div>
+  </div>
+  <div class="column sci-fi">
+    <div class="content">
+      <img src=".\images\img19.jpg" alt="Indru Netru Nalai" style="width:100%">
+      <h4 class="mtext" style="color:white">Indru Netru Nalai</h4>
+     <p style="color:white">Language: Tamil</p>
+    </div>
+  </div>
+  <div class="column sci-fi">
+    <div class="content">
+      <img src=".\images\img48.jpg" alt="Moonfall" style="width:100%">
+	  
+      <h4 class="mtext" style="color:white;font-size:30px"> Moonfall</h4>
+	  <br>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  
+  <div class="column sci-fi">
+    <div class="content">
+      <img src=".\images\img50.jpg" alt="Inception" style="width:100%">
+      <h4 class="mtext" style="color:white;font-size:30px">Inception</h4><br>
+     <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column sci-fi">
+    <div class="content">
+    <img src=".\images\img49.jpg" alt="Avatar" style="width:100%">
+      <h4 class="mtext" style="color:white;font-size:30px">Avatar</h4><br>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column sci-fi">
+    <div class="content">
+    <img src=".\images\img51.jpg" alt="Space battleship yamoto" style="width:100%">
+      <h4 class="mtext" style="color:white">Spacebattleship yamoto</h4>
+     <p style="color:white">Language: Japanese</p>
+    </div>
+  </div>
+  <div class="column sport">
+    <div class="content">
+    <img src=".\images\img12.jpg" alt="M.S.Dhoni" style="width:100%">
+      <h4 class="mtext" style="color:white">M.S.Dhoni</h4>
+      <p style="color:white">Language: Hindi</p>
+    </div>
+  </div>
+<div class="column sport">
+    <div class="content">
+      <img src=".\images\img21.jpg" alt="Shabaash Mithu" style="width:100%">
+      <h4 class="mtext" style="color:white">Shabaash Mithu</h4>
+      <p style="color:white">Language: Hindi</p>
+    </div>
+  </div>
+  <div class="column sport">
+    <div class="content">
+      <img src=".\images\img30.jpg" alt="King Richard" style="width:100%">
+      <h4 class="mtext" style="color:white">King Richard</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column sport">
+    <div class="content">
+      <img src=".\images\img32.jpg" alt="Shaolin Soccer" style="width:100%">
+      <h4 class="mtext" style="color:white">Shaolin Soccer</h4>
+     <p style="color:white">Language: Chinese</p>
+    </div>
+  </div>
+  
+  <div class="column sport">
+    <div class="content">
+    <img src=".\images\img33.jpg" alt="Jeeva" style="width:100%">
+      <h4 class="mtext" style="color:white">Jeeva</h4>
+      <p style="color:white">Language: Tamil</p>
+    </div>
+  </div>
+  <div class="column animation">
+    <div class="content">
+    <img src=".\images\img39.jpg" alt="jujutsu kaisen" style="width:100%">
+      <h4 class="mtext" style="color:white">Jujutsu<br> Kaisen 0</h4>
+      <p style="color:white">Language: Japanese</p>
+    </div>
+  </div>
+  <div class="column animation">
+    <div class="content">
+    <img src=".\images\img20.jpeg" alt="bighero6" style="width:100%">
+      <h4 class="mtext" style="color:white">Big <br> Hero 6</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column animation">
+    <div class="content">
+    <img src=".\images\img15.jpg" alt="tokyorevengers" style="width:100%">
+      <h4 class="mtext" style="color:white">Tokyo Revengers</h4>
+      <p style="color:white">Language: Japanese</p>
+    </div>
+  </div>
+  <div class="column animation">
+    <div class="content">
+    <img src=".\images\img38.jpg" alt="insideout" style="width:100%">
+      <h4 class="mtext" style="color:white">Inside<br>Out</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+   <div class="column animation">
+    <div class="content">
+    <img src=".\images\img23.jpg" alt="onward" style="width:100%">
+      <h4  class="mtext" style="color:white">Onward</h4><br>
+<p style="color:white">Language: English</p>
+    </div>
+  </div>
+   <div class="column adventure">
+    <div class="content">
+    <img src=".\images\img26.jpg" alt="alita" style="width:100%">
+      <h4 class="mtext" style="color:white">Alita</h4>
+     <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column adventure">
+    <div class="content">
+    <img src=".\images\img46.jpg"alt="tik tik tik" style="width:100%">
+      <h4 class="mtext" style="color:white">Tik Tik Tik</h4>
+      <p style="color:white">Language: Tamil</p>
+    </div>
+  </div>
+  <div class="column adventure">
+    <div class="content">
+    <img src=".\images\img24.jpg" alt="Harry Potter" style="width:100%">
+      <h4 class="mtext" style="color:white">Harry Potter</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div> 
+  <div class="column adventure">
+  <div class="content">
+    <img src=".\images\img44.jpg" alt="the pirates" style="width:100%">
+    
+      <h4 class="mtext" style="color:white">The Pirates</h4>
+    <p style="color:white">Language: Korean</p>
+    </div>
+  </div>
+  <div class="column adventure">
+    <div class="content">
+    <img src=".\images\img47.jpg" alt="uncharted" style="width:100%">
+	<br>
+      <h4 class="mtext" style="color:white">Uncharted</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  
+  <div class="column horror">
+    <div class="content">
+      <img src=".\images\img57.jpg" alt="death bell" style="width:100%">
+      <h4 class="mtext" style="color:white;font-size:30px">Death Bell</h4>
+      
+      <p style="color:white">Language: Korean</p>
+    </div>
+  </div>
+  <div class="column horror">
+    <div class="content">
+      <img src=".\images\img54.jpg" alt="Conjuring" style="width:100%">
+      <h4 class="mtext" style="color:white">Conjuring</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  <div class="column horror">
+    <div class="content">
+      <img src=".\images\img53.jpg" alt="The Wailing" style="width:100%">
+      <h4 class="mtext" style="color:white">The Wailing</h4>
+      <p style="color:white">Language: Korean</p>
+    </div>
+  </div>
+  <div class="column horror">
+    <div class="content">
+      <img src=".\images\img56.jpg" alt="Andhaghaaram" style="width:100%">
+      <h4 class="mtext" style="color:white">Andhaghaaram</h4>
+      <p style="color:white">Language: Tamil</p>
+    </div>
+  </div>
+  <div class="column horror">
+    <div class="content">
+      <img src=".\images\img58.jpg" alt="Sinister" style="width:100%">
+      <h4 class="mtext" style="color:white">Sinister</h4>
+      <p style="color:white">Language: English</p>
+    </div>
+  </div>
+  
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("action")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+   
+   <div class="boxes">
+   <center> <h2>Discover New Movies</h2><br>
+   <p STYLE="font-size:20PX;"> Predict the success class such as flop, hit, super hit of the movies.  Admin will add movie data of a particular film crew.  Admin will add new movie data along with film crew details as well as relaease date of the new movie.  Based on the weight age of histotical data of each film crew the movie will be labeled as super hit, hit or flop. The more information you can gather on a film, you can decide whether to watch it or not.</p>
+    </div></center>
+	<br><br><br><br>
+	<div class="rowe">
+  <div class="columne">
+    <div class="carde">
+	<div class="containere">
+	<h2 style="color: #151b54">STRATERGY</h2>
+        <p  STYLE="font-size:17PX;">The film industry is the area of commercial activity concerned with the production and distribution of films.  A film marketing plan is a comprehensive strategy for promoting a film to its target audience and generating interest and excitement for the release.  This area contains title, promotion, social media ads, audio launching, release date.
+</p>
+      </div>
+    </div>
+	</div>
+	<div class="columne">
+    <div class="carde">
+	<div class="containere">
+	<h2 style="color: #151b54"> SUCCESS RATE</h2>
+        <p  STYLE="font-size:17PX;">Predict the success class such as flop, hit, super hit of the movies. Admin will add movie data of a particular film crew. Admin will add new movie data along with film crew details as well as release date of the new movie. Based on the weight age of historical data of each film crew the movie will be labeled as super hit, hit or flop. 
+</p>
+      </div>
+    </div>
+	</div>
+	
+	
+	<div class="columne">
+    <div class="carde">
+	<div class="containere">
+	<h2 style="color: #151b54">IMPORTANCE</h2>
+        <p  STYLE="font-size:17PX;">Machine learning algorithms use historical data as input to predict the success values.  It allow us to make highly accurate guesses as to the likely outcomes of a question based on historical data, which can be about all kinds of things –  social media, actors and sentiment popularity to label the success rate.
+</p>
+      </div>
+    </div>
+	</div>
+  </div>
+</body>
+</html>
