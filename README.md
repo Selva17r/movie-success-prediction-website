@@ -17,7 +17,7 @@ It focuses on **front-end development and UI/UX design** with sections like over
 ## 🛠️ Tech Stack
 - **HTML5**  
 - **CSS3 / Bootstrap 4**  
-- **JavaScript (vanilla)**  
+- **JavaScript**  
 
 ---
 
